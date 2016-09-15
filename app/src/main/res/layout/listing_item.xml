@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/li_im_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listing_image_height"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/size_15"/>
+
+    <TextView
+        android:id="@+id/li_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/size_9"
+        android:layout_marginTop="@dimen/size_15"
+        android:layout_toRightOf="@+id/li_im_image"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_xl"/>
+
+    <TextView
+        android:id="@+id/li_tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/li_tv_title"
+        android:layout_marginLeft="@dimen/size_9"
+        android:layout_marginRight="@dimen/size_12"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@+id/li_im_arrow"
+        android:layout_toRightOf="@+id/li_im_image"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/detail_color"
+        android:textSize="@dimen/textsize_normal_15"/>
+
+</LinearLayout>
